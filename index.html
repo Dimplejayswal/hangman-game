@@ -1,0 +1,134 @@
+<!-- -------------------------------------------------------------------------- -->
+<!--             YOU ARE NOT ALLOWED TO MODIFY THE HTML!                        -->
+<!-- -------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------- -->
+<!--             YOU ARE NOT ALLOWED TO MODIFY THE HTML!                        -->
+<!-- -------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------- -->
+<!--             YOU ARE NOT ALLOWED TO MODIFY THE HTML!                        -->
+<!-- -------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------- -->
+<!--             YOU ARE NOT ALLOWED TO MODIFY THE HTML!                        -->
+<!-- -------------------------------------------------------------------------- -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>hangman</title>
+  <meta name="description" content="hangperson">
+  <meta name="author" content="hangperson Game">
+
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+
+<body class="container" background="/img/game2.jpg">
+    <!-- -------------------------------------------------------------------------- -->
+    <!--             Header and Start Game button                                   -->
+    <!-- -------------------------------------------------------------------------- -->
+    <h1>Hangman Game</h1> 
+    
+    <div id="category" class="categories">
+        <form id="category-form">
+          <div>
+            <label for="options">Categories</label>
+            <select id="categoryoption">
+              <option value="movies">Movies</option>
+              <option value="countries">Countries</option>
+              <option value="languages">Languages</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    <!-- -------------------------------------------------------------------------- -->
+    <!-- @DEBUG: This following button and div are used for debugging purposes only -->
+    <!-- -------------------------------------------------------------------------- -->
+    <div id="debug-actual-word">
+        <!-- @DEBUG: The actual word will be displayed here -->
+        DEBUG: write code to display the actual selected word here
+    </div>
+
+    <!-- -------------------------------------------------------------------------- -->
+    <!--   Main UI for the game  (hangperson image, the word, lives remaining, etc)    -->
+    <!-- -------------------------------------------------------------------------- -->
+    <h2>Guess a Letter</h2>
+
+    <!-- @WARNING: Do not remove the .letter-bank div!-->
+    <!-- is required so we can detect clicks on individual letters -->
+    <div class="letter-bank" style= "font-weight: bolder;"> 
+        <div class="row">
+            <div class="letter">A</div>
+            <div class="letter">B</div>
+            <div class="letter">C</div>
+            <div class="letter">D</div>
+            <div class="letter">E</div>
+            <div class="letter">F</div>
+            <div class="letter">G</div>
+        </div>
+        <div class="row">
+            <div class="letter">H</div>
+            <div class="letter">I</div>
+            <div class="letter">J</div>
+            <div class="letter">K</div>
+            <div class="letter">L</div>
+            <div class="letter">M</div>
+            <div class="letter">N</div>
+        </div>
+        <h2>Your word is:</h2>
+    <div id="word">
+     </div>
+        <div class="image-container">
+            <img id="img-hangperson-status" src="img/001.png">
+        </div>
+        <div class="row">
+            <div class="letter">O</div>
+            <div class="letter">P</div>
+            <div class="letter">Q</div>
+            <div class="letter">R</div>
+            <div class="letter">S</div>
+            <div class="letter">T</div>
+            <div class="letter">U</div>
+        </div>
+        <div class="row">
+            <div class="letter">V</div>
+            <div class="letter">W</div>
+            <div class="letter">X</div>
+            <div class="letter">Y</div>
+            <div class="letter">Z</div>
+        </div>
+     
+    </div> <!-- //. letter-bank -->
+    <!-- hangperson picture -->
+    
+    <!-- primary UI for showing the state of the word -->
+    
+
+    <!-- tell user how many guesses they have left -->
+    <div id="chances">
+        Chances Remaining: <span class="chancesLabel">0</span>
+    </div>
+
+    <!-- display messages about whether the user picked a right/wrong letter -->
+    <div id="results">
+        <!-- @TODO: if chosen letter is in the word, display a success messages -->
+        <!-- @TODO: else, show an error message -->
+    </div>
+
+
+    <!-- -------------------------------------------------------------------------- -->
+    <!--    UI for the letter "buttons". Note the buttons are actually divs         -->
+    <!-- -------------------------------------------------------------------------- -->
+    
+    <!-- -------------------------------------------------------------------------- -->
+    <!--    @TODO: Put any javascript imports here                                  -->
+    <!-- -------------------------------------------------------------------------- -->    
+    
+    <button class="btn-start-game pretty-btn blue"> Start Game </button> <br>
+    <button class="btn-save-game pretty-btn red"> Save Game </button>
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
